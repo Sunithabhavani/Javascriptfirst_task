@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>innerHTML</h1>
+    <P id="demo"></P>
+    <script>
+        document.getElementById("demo").innerHTML="<i>Hello World!</i>";
+    </script>
+    <h1>innerText</h1>
+    <P id="demo1"></P>
+    <script>
+        document.getElementById("demo1").innerText="<em>Hello World!</em>";
+    </script>
+    <h1>Prime Number</h1>
+    <p id="demo2"></p>
+    <script>
+       
+          let msg = "";
+
+                for (let a = 1; a <= 20; a++) {
+                    let count = 0;
+                    for (let b = 1; b <= a; b++) {
+                        if (a % b == 0) {
+                            count++;
+                        }
+                    }
+                    if (count == 2) {
+                        msg += "This is prime number=" + a + "<br>";
+                    }
+                }
+                document.getElementById("demo2").innerHTML = msg;
+    </script>
+    <h1>6 Table</h1>
+            <p id="demo3"></p>
+            <script>
+                let msg1 = "";
+                for (let i = 0; i <= 10; i++) {
+                    msg1 += "6 * " + i + "= " + 6 * i + "<br>";
+                }
+                document.getElementById("demo3").innerHTML = msg1;
+            </script>
+            <h1>Age</h1>
+            <p id="demo4"></p>
+            <script>
+                let age = 26;
+                if(age >= 18){
+                    document.getElementById("demo4").innerHTML =age +" Eligible for votes";
+                }
+                else{
+                     document.getElementById("demo4").innerHTML =age+ " Not eligible for votes";
+                }
+            </script>
+
+            <h1>1 - 100 in do while</h1>
+            <p id="demo5"></p>
+            <script>
+               
+                 let msg4 = "";
+                let i = 1;
+                do {
+                    msg4 += "The number is =" + i + "<br>";
+                    i++;
+                }
+                while (i <= 100);
+                document.getElementById("demo5").innerHTML = msg4;
+                        
+            </script>
+
+            <h1>Switch R,Y,G</h1>
+            <p id="demo6"></p>
+            <script>
+                
+                let color="RED";
+                switch (color) {
+                    case "RED":
+                       Statement  = "Stop!";
+                        break;
+                    case "YELLOW":
+                        Statement = "Ready!";
+                        break;
+                   case "GREEN":
+                        Statement = "Go!";
+                        break;                         
+                }
+                document.getElementById("demo6").innerHTML = "Statement : " + Statement;
+            </script>
+
+            <h1>Even 0r Odd in Switch </h1>
+            <p id="demo7"></p>
+            <script>
+                let num= 57;
+                switch (num%2) {
+                    case 0:
+                       result  = "This is even number";
+                        break;
+                    case 1:
+                        result = "This is 0dd number";
+                        break;
+                                         
+                }
+                document.getElementById("demo7").innerHTML = "Statement : " + result;
+            </script>
+</body>
+</html>
